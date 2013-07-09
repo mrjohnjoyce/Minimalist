@@ -39,7 +39,7 @@ Begin Window FullscreenWindow
       LockRight       =   False
       LockTop         =   True
       Renderer        =   0
-      Scope           =   0
+      Scope           =   "0"
       TabIndex        =   0
       TabPanelIndex   =   0
       TabStop         =   True
@@ -61,8 +61,10 @@ Begin Window FullscreenWindow
       LockRight       =   True
       LockTop         =   False
       Maximum         =   0
-      Scope           =   0
+      Scope           =   "0"
+      TabIndex        =   1
       TabPanelIndex   =   0
+      TabStop         =   True
       Top             =   788
       Value           =   0
       Visible         =   True
@@ -150,6 +152,7 @@ End
 
 	#tag Method, Flags = &h0
 		Sub GoToURL(url as string)
+		  'Open a URL
 		  if ((left(url,7) <> "http://") And (left(url,8) <> "https://")) then url = "http://" + url
 		  ProgressBar1.Maximum = 0
 		  htmlviewer1.loadURL(url)
