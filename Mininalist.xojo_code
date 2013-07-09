@@ -5,8 +5,6 @@ Inherits Application
 		Sub Activate()
 		  HotMarks.Append("facebook.com")
 		  HotMarks.Append("google.com")
-		  HotMarks.Append("brennaninc.com")
-		  HotMarks.Append("brennaninc.com/wp-admin")
 		  HotMarks.Append("linkedin.com")
 		  HotMarks.Append("john-joyce.com")
 		End Sub
